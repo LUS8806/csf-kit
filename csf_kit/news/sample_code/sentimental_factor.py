@@ -75,3 +75,20 @@ def raw_senti_data_process(df_raw, cut_hour=15, cut_minute=0):
     df_aligned = align_trade_date(df_raw, date_col='news_time', cut_hour=cut_hour, cut_minute=cut_minute)
 
     return df_aligned
+
+
+def sentiment_factor_calc(senti_score,
+                          rel_score=True,
+                          total_score=False,
+                          ex_neutral=True,
+                          score_diff=False,
+                          mean_type='sma'
+                          ):
+    """
+    calculate sentiment factor dataframe
+
+    :param senti_score:
+    :return:
+    """
+
+    pass

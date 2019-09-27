@@ -14,6 +14,7 @@ setup(name='csf_kit',
             'pandas',
             'numpy ',
             'zipfile37',
-            'python-dateutil'
+            'python-dateutil',
+            'alphalens'
       ]
       )

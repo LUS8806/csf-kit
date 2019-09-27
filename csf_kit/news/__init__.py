@@ -11,7 +11,7 @@ SAMPLE_FILE_PATH = os.path.join(ROOT_PATH, 'data/sample_news_file.txt')
 
 SAMPLE_SENTI_PATH = os.path.join(ROOT_PATH, 'data/sample_senti_score.csv')
 
-with open(SAMPLE_FILE_PATH, 'r') as f:
+with open(SAMPLE_FILE_PATH, 'r', encoding='u8') as f:
 
     line = f.readline()
 

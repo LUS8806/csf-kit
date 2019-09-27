@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad3c46ac-1eea-4c32-9096-e6362435d248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csf_kit/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/csf_kit/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csf_kit/data/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csf_kit/news/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/csf_kit/news/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py" beforeDir="false" afterPath="$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="270">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -48,8 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csf_kit/news/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="105" selection-start-line="19" selection-start-column="105" selection-end-line="19" selection-end-column="105" />
+            <state relative-caret-position="195">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csf_kit/data/sample_news_file.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -58,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/MANIFEST.in">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+              <caret column="31" selection-start-column="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -78,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+            <state relative-caret-position="747">
+              <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -120,20 +127,20 @@
         <option value="$PROJECT_DIR$/news/util.py" />
         <option value="$PROJECT_DIR$/news/sample_code/sentimental_factor.py" />
         <option value="$PROJECT_DIR$/csf_kit/news/sample_code/__init__.py" />
-        <option value="$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py" />
         <option value="$PROJECT_DIR$/csf_kit/news/util.py" />
         <option value="$PROJECT_DIR$/csf_kit/data/sample_news_file/__init__.py" />
         <option value="$PROJECT_DIR$/csf_kit/data/sample_news_file" />
         <option value="$PROJECT_DIR$/csf_kit/data/__init__.py" />
         <option value="$PROJECT_DIR$/csf_kit/__init__.py" />
-        <option value="$PROJECT_DIR$/csf_kit/news/__init__.py" />
         <option value="$PROJECT_DIR$/csf_kit/MANIFEST.in" />
+        <option value="$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py" />
+        <option value="$PROJECT_DIR$/csf_kit/news/__init__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="595" />
+    <option name="x" value="107" />
     <option name="y" value="23" />
     <option name="width" value="2513" />
     <option name="height" value="1417" />
@@ -156,6 +163,12 @@
               <item name="csf_kit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/PycharmProjects/csf_kit" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="csf_kit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="csf_kit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/PycharmProjects/csf_kit" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="csf_kit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -304,12 +317,12 @@
       <option name="presentableId" value="Default" />
       <updated>1569462802046</updated>
       <workItem from="1569462803469" duration="40943000" />
-      <workItem from="1569566514569" duration="1712000" />
+      <workItem from="1569566514569" duration="3725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42655000" />
+    <option name="totallyTimeSpent" value="44668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,10 +334,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="595" y="23" width="2513" height="1417" extended-state="0" />
+    <frame x="107" y="23" width="2513" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13597734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13597734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -338,12 +351,12 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50141644" side_tool="true" weight="0.25056604" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49817887" visible="true" weight="0.40754718" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49817887" visible="true" weight="0.40754718" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49858356" weight="0.25056604" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.32942128" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32327244" />
       <window_info anchor="right" id="Database" order="4" weight="0.32982597" />
     </layout>
   </component>
@@ -383,13 +396,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csf_kit/data/20190701-20190801.txt" />
-    <entry file="file://$PROJECT_DIR$/csf_kit/data/sample_news_file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csf_kit/data/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -397,13 +403,6 @@
           <folding>
             <element signature="e#1#12#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -417,10 +416,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csf_kit/news/__init__.py">
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="105" selection-start-line="19" selection-start-column="105" selection-end-line="19" selection-end-column="105" />
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csf_kit/news/sample_code/sentimental_factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -434,17 +440,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
+    <entry file="file://$PROJECT_DIR$/csf_kit/data/sample_news_file.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csf_kit/news/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
