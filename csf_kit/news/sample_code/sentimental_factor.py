@@ -1,6 +1,8 @@
 # encoding=utf8
 
 import pandas as pd
+import numpy as np
+from datetime import datetime
 from csf_kit.news.util import extract_senti_info_from_file
 from csf_kit.news.util import extract_tag_info_from_file
 from csf_kit.news.util import extract_data_from_files
@@ -8,11 +10,7 @@ from csf_kit.news.util import align_trade_date
 
 
 def extract_senti_data_from_file(file_path):
-
     """extract_senti_data"""
-
-    print(file_path)
-
     df_tag = extract_tag_info_from_file(file_path,
                                         news_filed=['newsId', 'newsTs'],
                                         tag_type='Company',
@@ -53,9 +51,7 @@ def extract_senti_data_from_file(file_path):
 
 
 def extract_senti_data_from_files(folder_path):
-
     senti_raw = extract_data_from_files(folder_path, extract_senti_data_from_file)
-
     return senti_raw
 
 
@@ -78,17 +74,61 @@ def raw_senti_data_process(df_raw, cut_hour=15, cut_minute=0):
 
 
 def sentiment_factor_calc(senti_score,
-                          rel_score=True,
-                          total_score=False,
+                          use_rel_score=True,
+                          cal_tot_score=False,
                           ex_neutral=True,
-                          score_diff=False,
-                          mean_type='sma'
+                          weight_type='equal'
                           ):
     """
-    calculate sentiment factor dataframe
 
-    :param senti_score:
+    :param senti_score: raw sentimental score dataframe
+    :param use_rel_score: Bool, default True. Set False to use 'senti_score', otherwise use 'senti_score_rel'
+    :param cal_tot_score: Bool, default False. Set True to calculate daily total sentiment score for each stock,
+                          otherwise calculate mean sentiment score.
+    :param ex_neutral: Bool, default True. Set False to keep the neutral score record, otherwise exclude these records
+                       when compute the sentimental score.
+    :param weight_type: Str, default 'equal'. 'equal': equal weighted mean score, 'time': time weighted mean score
     :return:
     """
+    senti_score = senti_score.query('senti_type!=0') if ex_neutral else senti_score
+    score_col = 'senti_score_rel' if use_rel_score else 'senti_score'
 
-    pass
+    def _score_fun(temp, dt, T):
+        if cal_tot_score:
+            score = (temp[score_col] / np.exp((dt - temp['news_time'])/T)).sum()
+        else:
+            score = (temp[score_col] / np.exp((dt - temp['news_time'])/T)).mean()
+        return score
+
+    last_dt = datetime(2017, 1, 1)
+    ret = {}
+
+    for dt, df in senti_score.groupby(['trade_date']):
+        if weight_type == 'equal':
+            if cal_tot_score:
+                ret[dt] = df.groupby('sec_code')[score_col].sum()
+            else:
+                ret[dt] = df.groupby('sec_code')[score_col].mean()
+
+        elif weight_type == 'time':
+            T = dt - last_dt
+            temp_df = df.groupby('sec_code').apply(lambda x: _score_fun(x, dt, T))
+            ret[dt] = temp_df
+            last_dt = dt
+
+    ret = pd.concat(ret, keys=ret.keys())
+
+    return ret
+
+
+if __name__ == "__main__":
+
+    from csf_kit.news import SAMPLE_SENTI_SCORE
+
+    senti_fac = sentiment_factor_calc(SAMPLE_SENTI_SCORE,
+                              use_rel_score=False,
+                              cal_tot_score=True,
+                              ex_neutral=False,
+                              weight_type='time')
+
+    print(senti_fac)

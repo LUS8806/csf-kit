@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='csf_kit',
-      version='0.1.3.1',
+      version='0.1.4',
       description='StartKit for ChinaScope data',
       author='ChinaScope',
       url='https://pypi.org/project/csf-kit/',
@@ -12,7 +12,7 @@ setup(name='csf_kit',
       exclude_package_data={'': ['.gitignore']},
       install_requires=[
             'pandas',
-            'numpy ',
+            'numpy',
             'zipfile37',
             'python-dateutil',
             'alphalens'
